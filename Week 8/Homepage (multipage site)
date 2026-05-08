@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">My Portfolio</a>
+    <div class="navbar-nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="hobbies.html">Hobbies</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
