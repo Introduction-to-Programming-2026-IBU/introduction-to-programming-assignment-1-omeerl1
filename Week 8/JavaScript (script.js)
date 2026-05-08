@@ -1,0 +1,31 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Part 1: Multiple Choice Logic
+    let correctButton = document.querySelector('#correct');
+    let incorrectButtons = document.querySelectorAll('.incorrect');
+    let feedback1 = document.querySelector('#feedback1');
+
+    correctButton.addEventListener('click', function() {
+        correctButton.style.backgroundColor = 'green';
+        feedback1.innerHTML = 'Correct!';
+    });
+
+    incorrectButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            button.style.backgroundColor = 'red';
+            feedback1.innerHTML = 'Incorrect';
+        });
+    });
+
+    // Part 2: Free Response Logic
+    document.querySelector('#check-answer').addEventListener('click', function() {
+        let input = document.querySelector('#answer-input');
+        let feedback2 = document.querySelector('#feedback2');
+        if (input.value === '4') {
+            input.style.backgroundColor = 'green';
+            feedback2.innerHTML = 'Correct!';
+        } else {
+            input.style.backgroundColor = 'red';
+            feedback2.innerHTML = 'Incorrect';
+        }
+    });
+});
